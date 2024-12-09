@@ -1,0 +1,112 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #facdd9e3;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fdd835;
+    padding: 20px;
+    text-align: center;
+}
+.logo img{
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 10rem;
+    margin: 0 auto;
+}
+
+
+h1 {
+    margin: 0;
+    color: #333;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+    color: #333;
+}
+
+input, select {
+    padding: 8px;
+    font-size: 14px;
+    margin: 5px;
+}
+
+/* Estilos de tarjetas */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 100%; /* Ajusta al tamaño del contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    object-fit: contain; /* Ajusta la imagen sin perder calidad */
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.card .btn-show-info {
+    background-color: #f8d030;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.card .info {
+    display: none;
+    font-size: 0.9em;
+    margin: 10px 0;
+}
+
+/* Lista de Pokémon */
+#pokemonList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Hover en las tarjetas */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilos del botón de "Ver más" */
+.card .btn-show-info:hover {
+    background-color: #e0b020;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .filters {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card {
+        width: 150px;
+        margin: 10px;
+    }
+}
